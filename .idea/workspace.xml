@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15734211-2a34-4574-b22c-c50e3facf433" name="更改" comment="">
+    <list default="true" id="15734211-2a34-4574-b22c-c50e3facf433" name="更改" comment="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
       <change afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GAN/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GAN/.idea/GAN.iml" afterDir="false" />
@@ -8346,7 +8346,6 @@
       <change afterPath="$PROJECT_DIR$/../php_app/templates/user/user_login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/templates/介绍.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学生信息采集美化版/信息查询改.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/Python_Study.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -8758,12 +8757,6 @@
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/shift_phase_amp.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/user_info.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/user_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/user_info.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/主界面.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/主界面.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/信息录入.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/信息录入.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/信息查询.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/信息查询.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8787,6 +8780,7 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/information_system/login.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/学生信息采集改版/信息录入.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -8808,8 +8802,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;Python.demo.executor&quot;: &quot;Run&quot;,
     &quot;Python.from布局.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
     &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
@@ -8824,60 +8820,17 @@
     &quot;Python.查询信息测试.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PyCharm/pyqt_demo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PyCharm/pyqt_demo/添加登录页面的信息管理系统&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyCharm\pyqt_demo\添加登录页面的信息管理系统" />
       <recent name="D:\PyCharm\pyqt_demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="主界面" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyqt_demo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/学生信息采集改版" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/学生信息采集改版/主界面.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="信息录入" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyqt_demo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/学生信息采集改版" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/学生信息采集改版/信息录入.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.app">
     <configuration name="信息查询" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyqt_demo" />
       <option name="ENV_FILES" value="" />
@@ -8922,7 +8875,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="from布局" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyqt_demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -8931,11 +8884,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/information_system" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/from布局.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/information_system/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyqt_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/information_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/information_system/login.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -8988,12 +8963,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="src" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyqt_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/添加登录页面的信息管理系统" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/添加登录页面的信息管理系统/src.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.login" />
+        <item itemvalue="Python.src" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.from布局" />
-        <item itemvalue="Python.主界面" />
       </list>
     </recent_temporary>
   </component>
@@ -9013,6 +9011,23 @@
       <option name="presentableId" value="Default" />
       <updated>1742003582972</updated>
     </task>
+    <task id="LOCAL-00001" summary="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
+      <option name="closed" value="true" />
+      <created>1742875568705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742875568705</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
+      <option name="closed" value="true" />
+      <created>1742875648654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742875648654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -9028,5 +9043,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="normal coomit" />
+    <MESSAGE value="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/information_system/login.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
