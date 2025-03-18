@@ -1,6 +1,6 @@
 import os
-from PyQt5.QtCore import Qt, QRegExp
-from PyQt5.QtGui import QPixmap, QIcon, QRegExpValidator
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import *
 
 
@@ -62,7 +62,7 @@ class QueryDialog(QDialog):
         """初始化界面"""
         self.setWindowTitle('信息查询')
         self.setFixedSize(680, 1100)  # 增加窗口高度以适应新的按钮
-        self.setWindowIcon(QIcon('./background2.jpg'))  # Windows优先使用
+        self.setWindowIcon(QIcon('background2.jpg'))  # Windows优先使用
         # 主布局
         main_layout = QVBoxLayout()
         main_layout.setContentsMargins(20, 20, 20, 20)
@@ -83,10 +83,6 @@ class QueryDialog(QDialog):
 
         self.id_input = QLineEdit()
         self.id_input.setPlaceholderText("请输入身份证号码...")
-        # 设置验证器，只允许输入18位数字
-        validator = QRegExpValidator(QRegExp(r'\d{18}'))
-        self.id_input.setValidator(validator)
-
         search_btn = QPushButton('🔍 开始查询')
         search_btn.setStyleSheet("font-size: 24px;font-weight: bold;")
 
@@ -94,19 +90,7 @@ class QueryDialog(QDialog):
         input_layout.addWidget(search_btn)
         layout.addLayout(input_layout)
 
-        # 默认情况下，搜索按钮不可用
-        search_btn.setEnabled(False)
-
-        # 连接文本变化信号到槽函数
-        self.id_input.textChanged.connect(lambda: self.on_input_changed(search_btn))
         search_btn.clicked.connect(self.do_search)
-
-    def on_input_changed(self, search_btn):
-        """当输入内容变化时，检查输入是否为18位数字，以决定搜索按钮是否可用"""
-        if self.id_input.hasAcceptableInput():
-            search_btn.setEnabled(True)
-        else:
-            search_btn.setEnabled(False)
 
     def set_style(self):
         """设置样式"""

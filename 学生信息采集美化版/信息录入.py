@@ -127,7 +127,7 @@ class EntryDialog(QDialog):
         self.nation_label.setText("汉")
         self.brithday_label.setText("2000-01-01")
         self.adress_label.setText("北京市朝阳区")
-        self.id_label.setText("1")
+        self.id_label.setText("500228200308297894")
 
     def start_camera(self):
         """启动摄像头"""
@@ -223,6 +223,5 @@ class EntryDialog(QDialog):
         cp = QDesktopWidget().availableGeometry().center()  # 获取屏幕中心点
         qr.moveCenter(cp)  # 将窗口中心移动到屏幕中心
         self.move(qr.topLeft())  # 移动窗口到新位置
-
 
 

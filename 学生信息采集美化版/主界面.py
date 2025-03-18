@@ -23,7 +23,7 @@ class MainWindow(QWidget):
         """初始化界面"""
         self.setWindowTitle('智能信息管理系统')
         # self.setGeometry(300, 300, 1000, 800)
-        self.setWindowIcon(QIcon('background.jpg'))  # Windows优先使用
+        self.setWindowIcon(QIcon('./background.jpg'))  # Windows优先使用
         self.resize(1000, 800)  # 设置窗口大小
         self.center()  # 调用居中方法
         # 主布局
@@ -36,8 +36,8 @@ class MainWindow(QWidget):
         btn_layout.setSpacing(40)
         self.entry_btn = QPushButton('📷 信息录入')
         self.query_btn = QPushButton('🔍 信息查询')
-        self.entry_btn.setStyleSheet("font-size: 24px;font-weight: bold;")
-        self.query_btn.setStyleSheet("font-size: 24px;font-weight: bold;")
+        self.entry_btn.setStyleSheet("font-size: 30px;font-weight: bold;")
+        self.query_btn.setStyleSheet("font-size: 30px;font-weight: bold;")
         for btn in [self.entry_btn, self.query_btn]:
             btn.setFixedSize(200, 100)
         btn_layout.addWidget(self.entry_btn)
