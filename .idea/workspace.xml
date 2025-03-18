@@ -8346,7 +8346,16 @@
       <change afterPath="$PROJECT_DIR$/../php_app/templates/user/user_login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/templates/介绍.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学生信息采集美化版/信息查询改.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/info_input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/info_seacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学生信息采集美化版/完整代码.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/src.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/src2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/user_info.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/Python_Study.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -8759,11 +8768,6 @@
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/user_info.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/user_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/user_info.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/主界面.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/主界面.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/信息录入.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/信息录入.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学生信息采集美化版/信息查询.py" beforeDir="false" afterPath="$PROJECT_DIR$/学生信息采集美化版/信息查询.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8787,6 +8791,7 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/information_system/login.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/学生信息采集改版/信息录入.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -8805,79 +8810,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.from布局.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.src (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.src.executor&quot;: &quot;Run&quot;,
-    &quot;Python.主界面.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息录入.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息查询.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息查询改.executor&quot;: &quot;Run&quot;,
-    &quot;Python.完整代码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.屏幕尺寸.executor&quot;: &quot;Run&quot;,
-    &quot;Python.查询信息测试.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PyCharm/pyqt_demo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.app.executor": "Run",
+    "Python.demo.executor": "Run",
+    "Python.from布局.executor": "Run",
+    "Python.login.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.src (1).executor": "Run",
+    "Python.src.executor": "Run",
+    "Python.主界面.executor": "Run",
+    "Python.信息录入.executor": "Run",
+    "Python.信息查询.executor": "Run",
+    "Python.信息查询改.executor": "Run",
+    "Python.完整代码.executor": "Run",
+    "Python.屏幕尺寸.executor": "Run",
+    "Python.查询信息测试.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/PyCharm/pyqt_demo/添加登录页面的信息管理系统",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyCharm\pyqt_demo\添加登录页面的信息管理系统" />
       <recent name="D:\PyCharm\pyqt_demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="主界面" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyqt_demo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/学生信息采集改版" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/学生信息采集改版/主界面.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="信息录入" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyqt_demo" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/学生信息采集改版" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/学生信息采集改版/信息录入.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.app">
     <configuration name="信息查询" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyqt_demo" />
       <option name="ENV_FILES" value="" />
@@ -8922,7 +8886,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="from布局" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyqt_demo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -8931,11 +8895,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/information_system" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/from布局.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/information_system/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyqt_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/information_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/information_system/login.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -8988,12 +8974,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="src" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyqt_demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/添加登录页面的信息管理系统" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/添加登录页面的信息管理系统/src.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.login" />
+        <item itemvalue="Python.src" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.from布局" />
-        <item itemvalue="Python.主界面" />
       </list>
     </recent_temporary>
   </component>
