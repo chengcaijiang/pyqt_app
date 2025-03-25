@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15734211-2a34-4574-b22c-c50e3facf433" name="更改" comment="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
+    <list default="true" id="15734211-2a34-4574-b22c-c50e3facf433" name="更改" comment="">
       <change afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GAN/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GAN/.idea/GAN.iml" afterDir="false" />
@@ -8346,6 +8346,16 @@
       <change afterPath="$PROJECT_DIR$/../php_app/templates/user/user_login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/templates/介绍.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../php_app/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/info_input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/info_seacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_system/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学生信息采集美化版/完整代码.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/src.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/src2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加登录页面的信息管理系统/user_info.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/Python_Study.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../python_website/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
@@ -8757,6 +8767,7 @@
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/shift_phase_amp.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../知识驱动的深度学习/第二版/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8799,31 +8810,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.from布局.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.src (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.src.executor&quot;: &quot;Run&quot;,
-    &quot;Python.主界面.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息录入.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息查询.executor&quot;: &quot;Run&quot;,
-    &quot;Python.信息查询改.executor&quot;: &quot;Run&quot;,
-    &quot;Python.完整代码.executor&quot;: &quot;Run&quot;,
-    &quot;Python.屏幕尺寸.executor&quot;: &quot;Run&quot;,
-    &quot;Python.查询信息测试.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PyCharm/pyqt_demo/添加登录页面的信息管理系统&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.app.executor": "Run",
+    "Python.demo.executor": "Run",
+    "Python.from布局.executor": "Run",
+    "Python.login.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.src (1).executor": "Run",
+    "Python.src.executor": "Run",
+    "Python.主界面.executor": "Run",
+    "Python.信息录入.executor": "Run",
+    "Python.信息查询.executor": "Run",
+    "Python.信息查询改.executor": "Run",
+    "Python.完整代码.executor": "Run",
+    "Python.屏幕尺寸.executor": "Run",
+    "Python.查询信息测试.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/PyCharm/pyqt_demo/添加登录页面的信息管理系统",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PyCharm\pyqt_demo\添加登录页面的信息管理系统" />
@@ -9011,23 +9022,6 @@
       <option name="presentableId" value="Default" />
       <updated>1742003582972</updated>
     </task>
-    <task id="LOCAL-00001" summary="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
-      <option name="closed" value="true" />
-      <created>1742875568705</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1742875568705</updated>
-    </task>
-    <task id="LOCAL-00002" summary="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。">
-      <option name="closed" value="true" />
-      <created>1742875648654</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1742875648654</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -9043,19 +9037,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="normal coomit" />
-    <MESSAGE value="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改删除管理员账户后，再次创建注册同名管理员时。闪退bug。为每个用户创建子表时添加了判断是否存在。" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/information_system/login.py</url>
-          <line>158</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

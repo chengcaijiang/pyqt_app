@@ -27,7 +27,7 @@ class Database:
     def get_all_users(self):
         """获取当前用户的所有数据"""
         cursor = self.conn.cursor()
-        cursor.execute(f'SELECT name, gender, nation, id FROM {self.table_name}')
+        cursor.execute(f'SELECT name, gender, id FROM {self.table_name}')
         return cursor.fetchall()
 
     def search_user(self, id_number):

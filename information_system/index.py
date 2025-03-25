@@ -23,9 +23,9 @@ class MainWindow(QWidget):
     def init_ui(self):
         """初始化界面"""
         self.setWindowTitle('智能信息管理系统')
-        self.setWindowFlags(Qt.Window | Qt.WindowCloseButtonHint | Qt.WindowMinimizeButtonHint)
+        # self.setGeometry(300, 300, 1000, 800)
         self.setWindowIcon(QIcon('./background.jpg'))  # Windows优先使用
-        self.resize(1200, 1000)  # 设置窗口大小
+        self.resize(1000, 800)  # 设置窗口大小
         self.center()  # 调用居中方法
         # 主布局
         main_layout = QVBoxLayout()
@@ -46,8 +46,8 @@ class MainWindow(QWidget):
 
         # 数据显示表格
         self.table = QTableWidget()
-        self.table.setColumnCount(4)
-        self.table.setHorizontalHeaderLabels(['姓名', '性别', '民族', '身份证号'])
+        self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderLabels(['姓名', '性别', '身份证号'])
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.table.verticalHeader().setVisible(False)
         self.table.setEditTriggers(QTableWidget.NoEditTriggers)  # 新增此行
@@ -104,7 +104,7 @@ class MainWindow(QWidget):
         """加载表格数据"""
         data = self.db.get_all_users()
         self.table.setRowCount(len(data))
-        for row, (name, gender, nation, id_num) in enumerate(data):
+        for row, (name, gender, id_num) in enumerate(data):
             # 创建单元格并设置居中
             def create_centered_item(text):
                 item = QTableWidgetItem(str(text))
@@ -113,8 +113,7 @@ class MainWindow(QWidget):
 
             self.table.setItem(row, 0, create_centered_item(name))
             self.table.setItem(row, 1, create_centered_item(gender))
-            self.table.setItem(row, 2, create_centered_item(nation))
-            self.table.setItem(row, 3, create_centered_item(id_num))
+            self.table.setItem(row, 2, create_centered_item(id_num))
 
     def refresh_table(self):
         """刷新表格数据"""

@@ -1,9 +1,9 @@
 # 登录窗口
 import re
 import sqlite3
-import hashlib
+
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QIcon
+
 
 def setup_database():
     """初始化系统用户表"""
@@ -36,7 +36,6 @@ class LoginDialog(QDialog):
     def init_ui(self):
         """初始化界面"""
         self.setWindowTitle('login')
-        self.setWindowIcon(QIcon('./background.jpg'))  # Windows优先使用
         self.setFixedSize(500, 500)
 
         # 使用选项卡切换登录/注册
@@ -157,7 +156,7 @@ class LoginDialog(QDialog):
             cursor.execute('INSERT INTO system_users VALUES (?,?)', (username, password))
             # 创建用户专属表
             table_name = f'user_{username}'
-            cursor.execute(f'''CREATE TABLE IF NOT EXISTS {table_name} (
+            cursor.execute(f'''CREATE TABLE {table_name} (
                 name TEXT, gender TEXT, nation TEXT, 
                 birth TEXT, address TEXT, id TEXT PRIMARY KEY, 
                 photo_path TEXT
