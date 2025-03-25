@@ -1,7 +1,7 @@
 # 登录窗口
 import re
 import sqlite3
-
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import *
 
 
@@ -36,6 +36,7 @@ class LoginDialog(QDialog):
     def init_ui(self):
         """初始化界面"""
         self.setWindowTitle('login')
+        self.setWindowIcon(QIcon('./background.jpg'))  # Windows优先使用
         self.setFixedSize(500, 500)
 
         # 使用选项卡切换登录/注册
